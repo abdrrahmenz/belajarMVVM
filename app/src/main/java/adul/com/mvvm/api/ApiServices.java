@@ -15,9 +15,11 @@ import rx.Observable;
  * @Web http://ahmadrosid.com
  */
 public interface ApiServices {
-    @GET("/api/jadwal-bioskop")
+
+
+    @GET("/api/jadwal-bioskop?k=24674091d271b5ed8a783b4965798b04")
     Observable<ListKota> getListKota();
 
-    @GET("/api/jadwal-bioskop")
+    @GET("/api/jadwal-bioskop?k=24674091d271b5ed8a783b4965798b04")
     Observable<JadwalBioskop> getjadwalBioskop(@Query("id") int id);
 }

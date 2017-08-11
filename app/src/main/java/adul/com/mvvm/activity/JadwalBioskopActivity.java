@@ -51,7 +51,7 @@ public class JadwalBioskopActivity extends AppCompatActivity {
 
     private void loadData() {
         showLoading();
-        subscription.add(jadwalViewModel.getJadwalBioskop(1)
+        subscription.add(jadwalViewModel.getJadwalBioskop(id)
                 .subscribe(new Observer<JadwalBioskop>() {
                     @Override public void onCompleted() {
                         hideLoading();
